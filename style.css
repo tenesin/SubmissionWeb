@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+
+header {
+    background-color: #FFF2D8;
+    color: #113946;
+    padding: 8px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.link {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+#content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column; 
+    flex: 3; 
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #BCA37F;
+    color: #113946;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #EAD7BB;
+}
+
+aside {
+    width: 300px;
+    padding: 10px;
+    margin-left: 20px; 
+}
+
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto !important;
+}
+footer {
+    background-color: #FFF2D8;
+    color: #113946;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    color: #113946;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+      align-items: center;
+    }
+  
+    #content {
+      margin: 20px;
+    }
+  
+    .articles-container {
+      align-items: center;
+    }
+  
+    aside {
+      margin-left: 0; /* Remove left margin for aside */
+    }
+  }
